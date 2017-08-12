@@ -1,3 +1,5 @@
+$primary-color: #44c0c2
+
 html  
   line-height: 1.6;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
@@ -13,7 +15,7 @@ img
 a 
   text-decoration: none;
   color: #c95a5d;
-  -webkit-transition: all 300ms ease-in-out;-moz-transition: all 300ms ease-in-out;transition: all 300ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;-moz-transition: all 200ms ease-in-out;transition: all 200ms ease-in-out;
 
 a:hover 
   color: #7C2B2D;
@@ -24,38 +26,46 @@ li
 /*----------------------------begin Header-------------------------------*/
 .banner 
   width: 100%;
-  height: 70px;
-  background: #468d68;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  height: 100px;
+  background: #fff;
   color: #fff;
 
 .banner a 
-    color: #fff;
+    color: #484c55
   
 .banner a:hover 
-    color: #7C2B2D;
+    color: $primary-color
   
 .logo 
   float: left;
   margin: 0;
-  font-size: 20px;
-  line-height: 70px;
+  font-size: 43px;
+  line-height: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $primary-color
+  font-family: 'Lobster', cursive
 
 .nav 
   float: right;
-  height: 40px;
-  padding: 0;
-  margin: 15px 0 0;
+  font-size: 15px;
+  margin: 0px
   
 .nav li
     display: inline-block;
+    padding: 38px 20px 38px 20px
 
 .nav li:hover
-    background-color: #fff; 
+    background-color: #f8f9fb
+    border-bottom: 2px solid $primary-color
+    -webkit-transition: background-color 200ms ease-in-out;
+    -moz-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 
 .container 
   width: 90%;
-  max-width: 800px;
+  max-width: 1170px;
   margin: auto;
+  overflow: hidden
 
 /*----------------------------end Header-------------------------------*/
