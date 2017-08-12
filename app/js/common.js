@@ -1,3 +1,4 @@
+/*------------------------menu-------------------------*/
 // Set options
     var options = {
         offset: '#showHere',
@@ -14,3 +15,4 @@ var banner = new Headhesive('.banner', options);
 
 // Headhesive destroy
 // banner.destroy();
+/*------------------------menu-------------------------*/
