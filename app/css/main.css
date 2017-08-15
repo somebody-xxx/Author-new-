@@ -73,11 +73,13 @@ li {
 .jssora053 {
   display: block;
   position: absolute;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 100%; }
 
 .jssora053 .a {
   fill: none;
-  stroke: #fff;
+  stroke: #49cbcd;
   stroke-width: 640;
   stroke-miterlimit: 10; }
 
