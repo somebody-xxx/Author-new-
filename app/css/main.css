@@ -75,7 +75,8 @@ li {
   position: absolute;
   cursor: pointer;
   background-color: #fff;
-  border-radius: 100%; }
+  border-radius: 100%;
+  border: 1px solid #fff; }
 
 .jssora053 .a {
   fill: none;
@@ -84,7 +85,10 @@ li {
   stroke-miterlimit: 10; }
 
 .jssora053:hover {
-  opacity: 0.8; }
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-transition: background 400ms ease-in-out;
+  -moz-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out; }
 
 .jssora053.jssora053dn {
   opacity: 0.5; }
