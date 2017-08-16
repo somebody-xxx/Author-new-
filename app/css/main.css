@@ -115,26 +115,53 @@ li {
   font-size: 23px;
   margin-bottom: 60px; }
 
-.ghost-button {
-  display: inline-block;
-  padding: 10px 43px;
-  font-size: 23px;
-  font-weight: 500;
-  color: #fff;
+a.ghost-button:link, a.ghost-button:visited {
+  position: relative;
+  display: block;
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 15px 31px;
   border-radius: 5px;
   border: 3px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
   text-align: center;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none; }
+  text-decoration: none;
+  overflow: hidden;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
 
-.ghost-button:hover,
-.ghost-button:active {
-  background: white;
-  color: #44c0c2;
-  -webkit-transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
-  -moz-transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
-  transition: background-color 400ms ease-in-out, color 400ms ease-in-out; }
+a.ghost-button:link:after, a.ghost-button:visited:after {
+  content: "";
+  position: absolute;
+  background: none repeat scroll 0 0 #fff;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s; }
+
+a.ghost-button:link:hover, a.ghost-button:visited:hover {
+  color: #49cbcd;
+  text-shadow: none; }
+
+a.ghost-button:link:hover:after, a.ghost-button:visited:hover:after {
+  height: 420%; }
+
+a.ghost-button.effekt:after {
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg); }
 
 /*----------------------------end Slider-------------------------------*/
 /*-------------------------BEGIN THE TEAM-----------------------------*/
@@ -159,18 +186,20 @@ li {
 #team p {
   font-size: 12px; }
 
+#team .team {
+  width: 201px;
+  height: 201px;
+  display: block;
+  border-radius: 100%; }
+
 #team .img_team {
   width: 201px;
   height: 201px;
-  border-radius: 100px;
-  background-image: url(../img/team_img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 0.5s ease-out,color 0.5s ease-out; }
+  border-radius: 100px; }
 
 #team .img_team:hover {
-  background-image: url(../img/team_add.png);
-  transition: background-image 0.3s ease-in,color 0.3s ease-in; }
+  background: rgba(75, 203, 205, 0.3);
+  transition: background 250ms ease-in; }
 
 /*-------------------------END THE TEAM-----------------------------*/
 /*-------------------------------------------*/
@@ -257,20 +286,29 @@ li {
 #contact .infa .social {
   padding-top: 20px; }
 
-#contact .infa .social img {
-  margin-right: 10px;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+#contact .infa .social_icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 23px;
+  text-align: center;
+  margin-right: 15px; }
 
-#contact .infa .social img:hover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg); }
+#contact .infa .facebook {
+  background-color: #3b5997; }
+
+#contact .infa .twitter {
+  background-color: #3ec2f3; }
+
+#contact .infa .google {
+  background-color: #e44c41; }
+
+#contact .infa .facebook:hover,
+#contact .infa .twitter:hover,
+#contact .infa .google:hover {
+  color: #fff;
+  transition: color 250ms ease-in; }
 
 #contact .infa p {
   margin-top: 15px;
@@ -367,17 +405,19 @@ li {
   #basic, #pro, #premium {
     margin-left: 22px; } }
 
+@media only screen and (min-width: 1025px) {
+  .four_team {
+    width: 1077px;
+    margin: 0 auto;
+    overflow: hidden; } }
+
 @media only screen and (min-width: 1025px) and (max-width: 1170px) {
   .three_blog {
     width: 1010px;
     margin: 0 auto;
     overflow: hidden; }
   #Adrian, #Narate, #Fernando, #Adedayo {
-    margin-left: 40px; }
-  .four_team {
-    width: 1077px;
-    margin: 0 auto;
-    overflow: hidden; } }
+    margin-left: 40px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #logo {
@@ -430,6 +470,14 @@ li {
   #contact textarea {
     width: 500px; } }
 
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none; }
+  .banner {
+    height: 70px; }
+  .logo {
+    line-height: 10px; } }
+
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   #logo {
     display: none; }
@@ -442,10 +490,6 @@ li {
     margin-bottom: 50px; }
   #menu {
     width: 100%; } }
-
-@media only screen and (max-width: 768px) {
-  .nav {
-    display: none; } }
 
 @media only screen and (min-width: 513px) and (max-width: 768px) {
   .container_menu {
