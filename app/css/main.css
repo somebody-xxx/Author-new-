@@ -354,8 +354,8 @@ a.ghost-button.effekt:after {
   color: #bface2;
   line-height: 1.8; }
 
-.form input[type="text"],
-.form input[type="email"] {
+.form .input_text,
+.form .input_email {
   width: 222px;
   font-size: 16px;
   font-family: 'Open Sans';
@@ -364,7 +364,16 @@ a.ghost-button.effekt:after {
   margin-right: 20px;
   margin-bottom: 30px;
   outline: none;
-  color: #757575; }
+  color: #d7d7d7; }
+
+.form .input_text:focus,
+.form .input_email:focus {
+  color: #49cbcd;
+  background-color: #faffbd;
+  -webkit-box-shadow: 0px 0px 15px #49cbcd;
+  -moz-box-shadow: 0px 0px 15px #49cbcd;
+  -o-box-shadow: 0px 0px 15px #49cbcd;
+  box-shadow: 0px 0px 15px #49cbcd; }
 
 .form textarea {
   width: 520px;
@@ -373,16 +382,18 @@ a.ghost-button.effekt:after {
   font-family: 'Open Sans';
   padding: 20px;
   border-radius: 5px;
-  color: #757575;
+  color: #828282;
   margin-bottom: 25px;
   outline: none;
   resize: none; }
 
-.form textarea:focus,
-.form .input:focus {
-  color: #000;
-  font-weight: 600;
-  background-color: #faffbd; }
+.form textarea:focus {
+  color: #49cbcd;
+  background-color: #faffbd;
+  -webkit-box-shadow: 0px 0px 15px #49cbcd;
+  -moz-box-shadow: 0px 0px 15px #49cbcd;
+  -o-box-shadow: 0px 0px 15px #49cbcd;
+  box-shadow: 0px 0px 15px #49cbcd; }
 
 .form input[type="submit"] {
   background-color: #49cbcd;

@@ -361,8 +361,8 @@ a.ghost-button.effekt:after
   color: #bface2;
   line-height: 1.8;
 
-.form input[type="text"],
-.form input[type="email"]
+.form .input_text,
+.form .input_email
   width: 222px;
   font-size: 16px;
   font-family: 'Open Sans';
@@ -371,7 +371,16 @@ a.ghost-button.effekt:after
   margin-right: 20px;
   margin-bottom: 30px;
   outline: none;
-  color: #757575;
+  color: #d7d7d7;
+
+.form .input_text:focus,
+.form .input_email:focus
+  color: $color_hover
+  background-color: #faffbd;
+  -webkit-box-shadow: 0px 0px 15px $color_hover
+  -moz-box-shadow: 0px 0px 15px $color_hover
+  -o-box-shadow: 0px 0px 15px $color_hover
+  box-shadow: 0px 0px 15px $color_hover
 
 .form textarea
   width: 520px;
@@ -380,16 +389,18 @@ a.ghost-button.effekt:after
   font-family: 'Open Sans';
   padding: 20px;
   border-radius: 5px;
-  color: #757575;
+  color: #828282
   margin-bottom: 25px;
   outline: none;
   resize: none;
 
-.form textarea:focus,
-.form .input:focus
-  color: #000;
-  font-weight: 600;
+.form textarea:focus
+  color: $color_hover
   background-color: #faffbd;
+  -webkit-box-shadow: 0px 0px 15px $color_hover
+  -moz-box-shadow: 0px 0px 15px $color_hover
+  -o-box-shadow: 0px 0px 15px $color_hover
+  box-shadow: 0px 0px 15px $color_hover
 
 .form input[type="submit"]
   background-color: $color_hover;
