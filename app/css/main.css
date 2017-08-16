@@ -2,8 +2,9 @@ html {
   line-height: 1.6;
   font-family: 'Open Sans', 'Helvetica', sans-serif; }
 
-body {
-  margin: 0px; }
+body, h6, h5, h4, h3, h2, h1, p {
+  margin: 0px;
+  padding: 0px; }
 
 img {
   max-width: 100%; }
@@ -24,8 +25,7 @@ li {
 /*----------------------------begin Header-------------------------------*/
 #banner {
   width: 100%;
-  height: 100px;
-  background: #fff;
+  height: 98px;
   position: fixed;
   top: 0;
   left: 0;
@@ -52,7 +52,7 @@ li {
 
 .nav li {
   display: inline-block;
-  padding: 38px 19px 38px 19px; }
+  padding: 36px 19px 36px 19px; }
 
 .nav li:hover {
   background-color: #f8f9fb;
@@ -204,7 +204,11 @@ a.ghost-button.effekt:after {
   border-radius: 100px;
   color: #f46d6d;
   font-size: 50px;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: background-color 250ms ease-out,opacity 250ms ease-out;
+  -moz-transition: background-color 250ms ease-out,opacity 250ms ease-out;
+  -o-transition: background-color 250ms ease-out,opacity 250ms ease-out;
+  transition: background-color 250ms ease-out,opacity 250ms ease-out; }
 
 #team .img_team .fa-plus {
   padding-top: 39%; }
@@ -257,12 +261,14 @@ a.ghost-button.effekt:after {
   background-color: #788492;
   border-radius: 3px;
   cursor: pointer;
-  outline: none;
-  transition: background-color 0.5s ease-out,color 0.5s ease-out; }
+  outline: none; }
 
 .button .buy:hover {
   background-color: #49cbcd;
-  transition: background-color 0.3s ease-in,color 0.3s ease-in; }
+  -webkit-transition: background-color 250ms ease-in,color 250ms ease-in;
+  -moz-transition: background-color 250ms ease-in,color 250ms ease-in;
+  -o-transition: background-color 250ms ease-in,color 250ms ease-in;
+  transition: background-color 250ms ease-in,color 250ms ease-in; }
 
 /*-------------------------------------------*/
 /*-----------------END BLOG-----------------*/
@@ -312,18 +318,33 @@ a.ghost-button.effekt:after {
   margin-right: 15px; }
 
 #contact .infa .facebook {
-  background-color: #3b5997; }
+  background-color: #3b5997;
+  -webkit-transition: color 250ms ease-out;
+  -moz-transition: color 250ms ease-out;
+  -o-transition: color 250ms ease-out;
+  transition: color 250ms ease-out; }
 
 #contact .infa .twitter {
-  background-color: #3ec2f3; }
+  background-color: #3ec2f3;
+  -webkit-transition: color 250ms ease-out;
+  -moz-transition: color 250ms ease-out;
+  -o-transition: color 250ms ease-out;
+  transition: color 250ms ease-out; }
 
 #contact .infa .google {
-  background-color: #e44c41; }
+  background-color: #e44c41;
+  -webkit-transition: color 250ms ease-out;
+  -moz-transition: color 250ms ease-out;
+  -o-transition: color 250ms ease-out;
+  transition: color 250ms ease-out; }
 
 #contact .infa .facebook:hover,
 #contact .infa .twitter:hover,
 #contact .infa .google:hover {
   color: #fff;
+  -webkit-transition: color 250ms ease-in;
+  -moz-transition: color 250ms ease-in;
+  -o-transition: color 250ms ease-in;
   transition: color 250ms ease-in; }
 
 #contact .infa p {
@@ -377,11 +398,17 @@ a.ghost-button.effekt:after {
   float: right;
   margin-right: 4%;
   cursor: pointer;
-  transition: background-color 0.5s ease-out,color 0.5s ease-out; }
+  -webkit-transition: background-color 250ms ease-out;
+  -moz-transition: background-color 250ms ease-out;
+  -o-transition: background-color 250ms ease-out;
+  transition: background-color 250ms ease-out; }
 
 .form input[type="submit"]:hover {
   background-color: #788492;
-  transition: background-color 0.3s ease-in,color 0.3s ease-in; }
+  -webkit-transition: background-color 250ms ease-i;
+  -moz-transition: background-color 250ms ease-i;
+  -o-transition: background-color 250ms ease-i;
+  transition: background-color 250ms ease-i; }
 
 /*-------------------------------------------*/
 /*--------------END CONTACT US--------------*/
