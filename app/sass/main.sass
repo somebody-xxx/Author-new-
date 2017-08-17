@@ -175,6 +175,10 @@ a.ghost-button.effekt:after
 /*----------------------------end Slider-------------------------------*/
 /*-------------------------BEGIN THE TEAM-----------------------------*/
 
+.container_team
+  max-width: 1440px
+  margin: 0 auto
+
 #team
   padding-top: 70px;
   color: #4e525d;
@@ -376,7 +380,6 @@ a.ghost-button.effekt:after
 .form .input_text:focus,
 .form .input_email:focus
   color: $color_hover
-  background-color: #faffbd;
   -webkit-box-shadow: 0px 0px 15px $color_hover
   -moz-box-shadow: 0px 0px 15px $color_hover
   -o-box-shadow: 0px 0px 15px $color_hover
@@ -396,14 +399,13 @@ a.ghost-button.effekt:after
 
 .form textarea:focus
   color: $color_hover
-  background-color: #faffbd;
   -webkit-box-shadow: 0px 0px 15px $color_hover
   -moz-box-shadow: 0px 0px 15px $color_hover
   -o-box-shadow: 0px 0px 15px $color_hover
   box-shadow: 0px 0px 15px $color_hover
 
 .form input[type="submit"]
-  background-color: $color_hover;
+  background-color: #788492;
   color: #fff;
   font-family: 'Open Sans';
   padding: 11px 55px;
@@ -422,7 +424,7 @@ a.ghost-button.effekt:after
   transition: background-color 250ms ease-out;
 
 .form input[type="submit"]:hover
-  background-color: #788492;
+  background-color: $color_hover;
   -webkit-transition: background-color 250ms ease-i;
   -moz-transition: background-color 250ms ease-i;
   -o-transition: background-color 250ms ease-i;
@@ -440,6 +442,9 @@ a.ghost-button.effekt:after
   #contact .infa .social {padding-top: 10px;}
   #contact .infa p {font-size: 12px;}
 
+@media only screen and (min-width: 1025px)
+  .four_team {width: 1077px;margin: 0 auto;overflow: hidden;}
+
 @media only screen and (min-width: 1025px) and (max-width: 1200px)
   #logo {padding-left: 5%;width: 45%;}
   #contact .infa {padding-left: 15px;width: 48%;}
@@ -447,6 +452,9 @@ a.ghost-button.effekt:after
   .form input[type="text"], .form input[type="email"] {width: 38%;margin-right: 2%}
   .infa h4 {font-size: 16px;}
   .infa p {font-size: 12px;}
+  #Narate,#Fernando,#Adedayo {margin-left: 35px;}
+  #Adrian {margin-left: 0px}
+  .four_team {width: 963px;}
 
 
 @media only screen and (max-width: 1170px)
@@ -454,12 +462,8 @@ a.ghost-button.effekt:after
   .button .buy {padding: 8px 39px;}
   #basic, #pro, #premium {margin-left: 22px}
 
-@media only screen and (min-width: 1025px)
-  .four_team {width: 1077px;margin: 0 auto;overflow: hidden;}
-
 @media only screen and (min-width: 1025px) and (max-width: 1170px)
   .three_blog {width: 1010px;margin: 0 auto;overflow: hidden;}
-  #Adrian,#Narate,#Fernando,#Adedayo {margin-left: 40px;}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px)
   #logo {width: 31%;padding-left: 38px;}
@@ -482,8 +486,6 @@ a.ghost-button.effekt:after
 
 @media only screen and (max-width: 768px)
   .nav {display: none;}
-  .banner {height: 70px;}
-  .logo {line-height: 10px;}
 
 @media only screen and (min-width: 426px) and (max-width: 768px)
   #logo {display: none;}
@@ -492,7 +494,7 @@ a.ghost-button.effekt:after
   #team h1 {margin-bottom: 50px;}
   #menu {width: 100%;}
 
-@media only screen and (min-width: 513px) and (max-width: 768px)
+@media only screen and (min-width: 514px) and (max-width: 768px)
   .container_menu {width: 426px;margin: 0 auto;overflow: hidden;}
   .img_prev, .img_next {width: 28px;height: 28px;}
   #Adrian,#Fernando {clear: both}
