@@ -229,6 +229,11 @@ a.ghost-button.effekt:after {
 /*-------------------------------------------*/
 /*----------------BEGIN BLOG----------------*/
 /*-----------------------------------------*/
+.container_blog {
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden; }
+
 #blog {
   padding-top: 120px;
   background-color: #f1f1f1;
@@ -608,7 +613,7 @@ a.ghost-button.effekt:after {
     overflow: hidden; }
   #basic, #pro, #premium {
     clear: both;
-    margin-left: 6px; }
+    margin-left: 5px; }
   #blog {
     padding: 50px 0px; }
   .img_prev, .img_next {
