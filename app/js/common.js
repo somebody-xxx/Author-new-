@@ -9,3 +9,15 @@
     });
 });
 /*------------------------аnchor-------------------------*/
+jQuery(document).ready(function($){
+ 
+    /* Подготавливаем иконку меню */
+    $('.nav-wrap').prepend('<div id="menu-icon"><i class="fa fa-compass" aria-hidden="true"></i><span>Menu</span></div>');
+     
+    /* Включаем навигацию */
+    $("#menu-icon").on("click", function(){
+        $(".nav").slideToggle();
+        $(this).toggleClass("active");
+    });
+
+});

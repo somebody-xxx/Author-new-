@@ -53,7 +53,7 @@ li
   
 .nav li
     display: inline-block;
-    padding: 36px 19px 36px 19px
+    padding: 36px 18px 36px 18px
 
 .nav li:hover
     background-color: #f8f9fb
@@ -61,6 +61,16 @@ li
     -webkit-transition: background-color 200ms ease-in-out;
     -moz-transition: background-color 200ms ease-in-out;
     transition: background-color 200ms ease-in-out;
+
+#menu-icon
+  display: none;
+  font-family: 'Lobster', cursive
+
+#menu-icon:hover span
+  border-bottom: 1px solid $primary-color;
+
+#menu-icon:hover .fa-compass
+  color: $primary-color
 
 .container 
   width: 90%;
@@ -495,7 +505,10 @@ a.ghost-button.effekt:after
   #contact textarea {width: 500px;}
 
 @media only screen and (max-width: 768px)
-  .nav {display: none;}
+  .nav {clear: both;background: #f8f8f8;border: 1px solid #999;padding-left: 0px;}
+  #menu-icon {float: right;margin-top: 30px;color: #000;font-size: 120%;width: max-content;cursor: pointer;display: block;}
+  #menu-icon .fa-compass {font-size: 150%;padding-right: 5px;vertical-align: top;}
+
 
 @media only screen and (min-width: 426px) and (max-width: 768px)
   #logo {display: none;}
