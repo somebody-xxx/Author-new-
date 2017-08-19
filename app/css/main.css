@@ -584,7 +584,15 @@ a.ghost-button.effekt:after {
     padding-right: 5px;
     vertical-align: top; }
   .slider {
-    margin-top: -37px; } }
+    margin-top: -37px; }
+  #team .team {
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    background-size: cover; }
+  #team .img_team {
+    width: 170px;
+    height: 170px; } }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   #logo {
