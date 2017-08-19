@@ -23,9 +23,6 @@ a:hover
 li
     list-style-type: none;
 
-ul, menu, dir
-    display: block;
-
 /*----------------------------begin Header-------------------------------*/
 #banner 
   width: 100%;
@@ -74,6 +71,9 @@ ul, menu, dir
 
 #menu-icon:hover .fa-compass
   color: $primary-color
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 
 .container 
   width: 90%;
@@ -96,6 +96,9 @@ ul, menu, dir
   position: absolute
   cursor: pointer
   background-color: #fff
+  -webkit-border-radius: 100%
+  -moz-box-border-radius: 100%
+  -o-box-border-radius: 100%
   border-radius: 100%
   border: 1px solid #fff
 
@@ -510,10 +513,11 @@ a.ghost-button.effekt:after
 @media only screen and (max-width: 768px)
   #banner {height: 60px;}
   .logo {line-height: 0px;font-size: 240%;}
-  .nav {clear: both;background: #f8f8f8;border: 1px solid #999;padding-left: 0px;}
+  .nav {clear: both;background: rgba(255, 255, 255, 0.9);padding-left: 0px; float: none;text-align: center;}
+  .nav li {display: block; padding: 6.4px;}
   #menu-icon {float: right;margin-top: 17px;color: #000;font-size: 120%;width: max-content;cursor: pointer;display: block;}
   #menu-icon .fa-compass {font-size: 150%;padding-right: 5px;vertical-align: top;}
-
+  .slider {margin-top: -37px;}
 
 @media only screen and (min-width: 426px) and (max-width: 768px)
   #logo {display: none;}
@@ -521,7 +525,6 @@ a.ghost-button.effekt:after
   #menu ul li {font-size: 14px;padding: 13px 14px 15px 14px;}
   #team h1 {margin-bottom: 50px;}
   #menu {width: 100%;}
-  .slider {margin-top: -37px;}
 
 @media only screen and (min-width: 514px) and (max-width: 768px)
   .container_menu {width: 426px;margin: 0 auto;overflow: hidden;}
@@ -531,7 +534,7 @@ a.ghost-button.effekt:after
   #Adrian,#Narate,#Fernando,#Adedayo {margin-bottom: 25px;margin-left: 40px;}
   #blog {padding: 50px 0px}
   #blog .one_team {width: 320px;margin: 0 auto;overflow: hidden;}
-  #basic, #pro, #premium {clear: both;margin-bottom: 20px;margin-left: 0px;}
+  #basic, #pro, #premium {clear: both;margin-bottom: 40px;margin-left: 0px;}
   #contact {padding-top: 40px;}
   #contact h1 {margin-bottom: 60px;font-size: 35px;padding-left: 0px;}
   #contact .infa, #contact .form {width: 100%;text-align: center;}
@@ -544,10 +547,9 @@ a.ghost-button.effekt:after
   .container_menu {width: 426px;margin: 0 auto;overflow: hidden;}
   #Adrian,#Narate,#Fernando,#Adedayo {clear: both;}
   .one_team {width: 320px;margin: 0 auto;overflow: hidden;}
-  #basic, #pro, #premium {clear: both;margin-left: 5px;}
+  #basic, #pro, #premium {clear: both;margin-left: 5px;margin-bottom: 40px;}
   #blog {padding: 50px 0px}
   .img_prev, .img_next {width: 28px;height: 28px;}
-  #basic, #pro, #premium {margin-bottom: 20px;}
   #contact {padding-top: 40px;}
   #contact h1 {margin-bottom: 60px;font-size: 40px;padding-left: 0px;}
   #contact .infa, #contact .form {width: 100%;text-align: center;}

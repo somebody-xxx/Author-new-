@@ -22,9 +22,6 @@ a:hover {
 li {
   list-style-type: none; }
 
-ul, menu, dir {
-  display: block; }
-
 /*----------------------------begin Header-------------------------------*/
 #banner {
   width: 100%;
@@ -72,7 +69,10 @@ ul, menu, dir {
   border-bottom: 1px solid #44c0c2; }
 
 #menu-icon:hover .fa-compass {
-  color: #44c0c2; }
+  color: #44c0c2;
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out; }
 
 .container {
   width: 90%;
@@ -94,6 +94,9 @@ ul, menu, dir {
   position: absolute;
   cursor: pointer;
   background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-box-border-radius: 100%;
+  -o-box-border-radius: 100%;
   border-radius: 100%;
   border: 1px solid #fff; }
 
@@ -561,9 +564,13 @@ a.ghost-button.effekt:after {
     font-size: 240%; }
   .nav {
     clear: both;
-    background: #f8f8f8;
-    border: 1px solid #999;
-    padding-left: 0px; }
+    background: rgba(255, 255, 255, 0.9);
+    padding-left: 0px;
+    float: none;
+    text-align: center; }
+  .nav li {
+    display: block;
+    padding: 6.4px; }
   #menu-icon {
     float: right;
     margin-top: 17px;
@@ -575,7 +582,9 @@ a.ghost-button.effekt:after {
   #menu-icon .fa-compass {
     font-size: 150%;
     padding-right: 5px;
-    vertical-align: top; } }
+    vertical-align: top; }
+  .slider {
+    margin-top: -37px; } }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   #logo {
@@ -588,9 +597,7 @@ a.ghost-button.effekt:after {
   #team h1 {
     margin-bottom: 50px; }
   #menu {
-    width: 100%; }
-  .slider {
-    margin-top: -37px; } }
+    width: 100%; } }
 
 @media only screen and (min-width: 514px) and (max-width: 768px) {
   .container_menu {
@@ -617,7 +624,7 @@ a.ghost-button.effekt:after {
     overflow: hidden; }
   #basic, #pro, #premium {
     clear: both;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 0px; }
   #contact {
     padding-top: 40px; }
@@ -653,14 +660,13 @@ a.ghost-button.effekt:after {
     overflow: hidden; }
   #basic, #pro, #premium {
     clear: both;
-    margin-left: 5px; }
+    margin-left: 5px;
+    margin-bottom: 40px; }
   #blog {
     padding: 50px 0px; }
   .img_prev, .img_next {
     width: 28px;
     height: 28px; }
-  #basic, #pro, #premium {
-    margin-bottom: 20px; }
   #contact {
     padding-top: 40px; }
   #contact h1 {
