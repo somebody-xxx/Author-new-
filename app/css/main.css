@@ -22,6 +22,9 @@ a:hover {
 li {
   list-style-type: none; }
 
+ul, menu, dir {
+  display: block; }
+
 /*----------------------------begin Header-------------------------------*/
 #banner {
   width: 100%;
@@ -551,6 +554,11 @@ a.ghost-button.effekt:after {
     width: 500px; } }
 
 @media only screen and (max-width: 768px) {
+  #banner {
+    height: 60px; }
+  .logo {
+    line-height: 0px;
+    font-size: 240%; }
   .nav {
     clear: both;
     background: #f8f8f8;
@@ -558,7 +566,7 @@ a.ghost-button.effekt:after {
     padding-left: 0px; }
   #menu-icon {
     float: right;
-    margin-top: 30px;
+    margin-top: 17px;
     color: #000;
     font-size: 120%;
     width: max-content;
@@ -580,7 +588,9 @@ a.ghost-button.effekt:after {
   #team h1 {
     margin-bottom: 50px; }
   #menu {
-    width: 100%; } }
+    width: 100%; }
+  .slider {
+    margin-top: -37px; } }
 
 @media only screen and (min-width: 514px) and (max-width: 768px) {
   .container_menu {

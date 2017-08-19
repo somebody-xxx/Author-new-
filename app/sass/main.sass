@@ -23,6 +23,9 @@ a:hover
 li
     list-style-type: none;
 
+ul, menu, dir
+    display: block;
+
 /*----------------------------begin Header-------------------------------*/
 #banner 
   width: 100%;
@@ -505,8 +508,10 @@ a.ghost-button.effekt:after
   #contact textarea {width: 500px;}
 
 @media only screen and (max-width: 768px)
+  #banner {height: 60px;}
+  .logo {line-height: 0px;font-size: 240%;}
   .nav {clear: both;background: #f8f8f8;border: 1px solid #999;padding-left: 0px;}
-  #menu-icon {float: right;margin-top: 30px;color: #000;font-size: 120%;width: max-content;cursor: pointer;display: block;}
+  #menu-icon {float: right;margin-top: 17px;color: #000;font-size: 120%;width: max-content;cursor: pointer;display: block;}
   #menu-icon .fa-compass {font-size: 150%;padding-right: 5px;vertical-align: top;}
 
 
@@ -516,6 +521,7 @@ a.ghost-button.effekt:after
   #menu ul li {font-size: 14px;padding: 13px 14px 15px 14px;}
   #team h1 {margin-bottom: 50px;}
   #menu {width: 100%;}
+  .slider {margin-top: -37px;}
 
 @media only screen and (min-width: 514px) and (max-width: 768px)
   .container_menu {width: 426px;margin: 0 auto;overflow: hidden;}
