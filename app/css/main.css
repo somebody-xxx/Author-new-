@@ -570,7 +570,8 @@ a.ghost-button.effekt:after {
     text-align: center; }
   .nav li {
     display: block;
-    padding: 6.4px; }
+    padding: 6.4px;
+    border-bottom: 2px solid #fff; }
   #menu-icon {
     float: right;
     margin-top: 17px;
