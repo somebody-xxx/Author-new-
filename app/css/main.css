@@ -310,11 +310,13 @@ a.ghost-button.effekt:after {
   padding-top: 100px;
   padding-bottom: 100px;
   color: #fff;
-  background-image: url(../img/contact_fon.png);
+  background-image: url(../img/contact_fon.jpg);
+  background-color: #000;
   overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  background-position: top; }
 
 #contact h1 {
   text-align: center;
@@ -343,39 +345,40 @@ a.ghost-button.effekt:after {
   height: 40px;
   display: inline-block;
   border-radius: 100%;
-  font-size: 23px;
+  font-size: 24px;
   text-align: center;
   margin-right: 15px; }
 
 #contact .infa .facebook {
   background-color: #3b5997;
-  -webkit-transition: color 250ms ease-out;
-  -moz-transition: color 250ms ease-out;
-  -o-transition: color 250ms ease-out;
-  transition: color 250ms ease-out; }
+  -webkit-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -moz-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -o-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  transition: color 250ms ease-out, border-radius 250ms ease-out; }
 
 #contact .infa .twitter {
   background-color: #3ec2f3;
-  -webkit-transition: color 250ms ease-out;
-  -moz-transition: color 250ms ease-out;
-  -o-transition: color 250ms ease-out;
-  transition: color 250ms ease-out; }
+  -webkit-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -moz-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -o-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  transition: color 250ms ease-out, border-radius 250ms ease-out; }
 
 #contact .infa .google {
   background-color: #e44c41;
-  -webkit-transition: color 250ms ease-out;
-  -moz-transition: color 250ms ease-out;
-  -o-transition: color 250ms ease-out;
-  transition: color 250ms ease-out; }
+  -webkit-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -moz-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  -o-transition: color 250ms ease-out, border-radius 250ms ease-out;
+  transition: color 250ms ease-out, border-radius 250ms ease-out; }
 
 #contact .infa .facebook:hover,
 #contact .infa .twitter:hover,
 #contact .infa .google:hover {
   color: #fff;
-  -webkit-transition: color 250ms ease-in;
-  -moz-transition: color 250ms ease-in;
-  -o-transition: color 250ms ease-in;
-  transition: color 250ms ease-in; }
+  border-radius: 15%;
+  -webkit-transition: color 250ms ease-in, border-radius 220ms ease-in;
+  -moz-transition: color 250ms ease-in, border-radius 220ms ease-in;
+  -o-transition: color 250ms ease-in, border-radius 220ms ease-in;
+  transition: color 250ms ease-in, border-radius 220ms ease-in; }
 
 #contact .infa p {
   margin-top: 15px;
@@ -386,15 +389,16 @@ a.ghost-button.effekt:after {
 
 .form .input_text,
 .form .input_email {
-  width: 222px;
+  width: 228px;
   font-size: 16px;
   font-family: 'Open Sans';
-  padding: 7px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   margin-right: 20px;
   margin-bottom: 30px;
   outline: none;
-  color: #d7d7d7; }
+  border: 1px;
+  color: #828282; }
 
 .form .input_text:focus,
 .form .input_email:focus {
@@ -414,7 +418,8 @@ a.ghost-button.effekt:after {
   color: #828282;
   margin-bottom: 25px;
   outline: none;
-  resize: none; }
+  resize: none;
+  border: 1px; }
 
 .form textarea:focus {
   color: #49cbcd;
@@ -478,7 +483,7 @@ a.ghost-button.effekt:after {
     width: 88%;
     height: 130px; }
   .form input[type="text"], .form input[type="email"] {
-    width: 38%;
+    width: 39%;
     margin-right: 2%; }
   .infa h4 {
     font-size: 16px; }
