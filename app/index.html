@@ -215,9 +215,15 @@
 			</div>
 			<div class="form">
 				<div class="form_centr">
-					<form action="#">
-						<input class="input_text" type="text" name="name" maxlength="20" placeholder="Name" required>
-						<input class="input_email" type="email" name="email" maxlength="30" placeholder="Email" required><br />
+					<form action="#" name="form" onsubmit="return validate()">
+					<div class="container_for_input_text">
+						<span style="color:red" id="namef"></span>
+						<input class="input_text" type="text" name="name" maxlength="20" placeholder="Name" >
+					</div>
+					<div class="container_for_input_email">
+						<span style="color:red" id="emailf"></span>
+						<input class="input_email" type="email" name="email" maxlength="30" placeholder="Email" ><br />
+					</div>
 						<textarea name="message" placeholder="Message"></textarea> <br />
 						<input type="submit" value="Send">
 					</form>
