@@ -10,20 +10,6 @@ function validate(){
       return false;
    }
 }
-/*function validate_email(){
-    var adr_pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
-    var email=document.forms["form"]["email"].value;
-
-    var prov=adr_pattern.test(email);
-
-    if(email.length >= 1){
-        //Если поле не содержит эти символы знач email введен не верно
-        if (prov == true){
-         document.getElementById("emailf").innerHTML="*email введен не верно";
-         return false;
-            }
-        }
-}*/
 /*------------------------form--------------------------*/
 /*------------------------аnchor-------------------------*/
 
